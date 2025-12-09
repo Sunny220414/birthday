@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Happy Birthday Website | Special Birthday Greeting">
+    <title>🎂 Happy Birthday</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Added audio element for background music -->
+    <audio id="birthdayAudio" autoplay loop>
+        <source src="/images/happy-birthday-334876.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="wrapper">
+        <div class="flag__birthday">
+            <img src="./images/1.png" alt="flag decoration" width="350" class="flag__left">
+            <img src="./images/1.png" alt="flag decoration" width="350" class="flag__right">
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="title">
+                    <h1 class="happy">
+                        <span style="--t: 4s;">H</span>
+                        <span style="--t: 4.2s;">a</span>
+                        <span style="--t: 4.4s;">p</span>
+                        <span style="--t: 4.6s;">p</span>
+                        <span style="--t: 4.8s;">y</span>
+                    </h1>
+                    <h1 class="birthday">
+                        <span style="--t: 5s;">B</span>
+                        <span style="--t: 5.2s;">i</span>
+                        <span style="--t: 5.4s;">r</span>
+                        <span style="--t: 5.6s;">t</span>
+                        <span style="--t: 5.8s;">h</span>
+                        <span style="--t: 6s;">d</span>
+                        <span style="--t: 6.2s;">a</span>
+                        <span style="--t: 6.4s;">y</span>
+                    </h1>
+                    <div class="hat">
+                        <img src="./images/hat.png" alt="party hat" width="130">
+                    </div>
+                </div>
+                <div class="date__of__birth">
+                    <span></span>
+                </div>
+                <!-- Button initially hidden, shows after animations complete -->
+                <div class="btn hidden">
+                    <button id="btn__letter">
+                        <div class="mail">
+                            Open Your Gift
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="box__account">
+                    <div class="image">
+                        <!-- Replaced placeholder with actual cover image -->
+                        <img src="./images/imageCover.jpeg" alt="birthday person">
+                    </div>
+                    <div class="name">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Hey Ani❤️</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="balloon_one">
+                        <img width="100px" src="./images/balloon1.png" alt="balloon decoration">
+                    </div>
+                    <div class="balloon_two">
+                        <img width="100px" src="./images/balloon2.png" alt="balloon decoration">
+                    </div>
+                </div>
+                <div class="cricle">
+                    <div class="text__cricle">
+                        <span style="--i: 1;">h</span>
+                        <span style="--i: 2;">a</span>
+                        <span style="--i: 3;">p</span>
+                        <span style="--i: 4;">p</span>
+                        <span style="--i: 5;">y</span>
+                        <span style="--i: 6;">-</span>
+                        <span style="--i: 7;">b</span>
+                        <span style="--i: 8;">i</span>
+                        <span style="--i: 9;">r</span>
+                        <span style="--i: 10;">t</span>
+                        <span style="--i: 11;">h</span>
+                        <span style="--i: 12;">d</span>
+                        <span style="--i: 13;">a</span>
+                        <span style="--i: 14;">y</span>
+                        <span style="--i: 15;">-</span>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        <div class="decorate_star star1" style="--t: 15s;"></div>
+        <div class="decorate_star star2" style="--t: 15.2s;"></div>
+        <div class="decorate_star star3" style="--t: 15.4s;"></div>
+        <div class="decorate_star star4" style="--t: 15.6s;"></div>
+        <div class="decorate_star star5" style="--t: 15.8s;"></div>
+        <div class="decorate_flower--one" style="--t: 15s;">
+            <img width="20" src="./images/decorate_flower.png" alt="flower decoration">
+        </div>
+        <div class="decorate_flower--two" style="--t: 15.3s;">
+            <img width="20" src="./images/decorate_flower.png" alt="flower decoration">
+        </div>
+        <div class="decorate_flower--three" style="--t: 15.6s;">
+            <img width="20" src="./images/decorate_flower.png" alt="flower decoration">
+        </div>
+        <div class="decorate_bottom">
+            <img src="./images/decorate.png" alt="bottom decoration" width="100">
+        </div>
+        <div class="smiley__icon">
+            <img src="./images/smiley_icon.png" alt="smiley decoration" width="100">
+        </div>
+
+        <!-- Birthday Card - Now hidden until button is clicked -->
+        <div class="boxMail">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="boxMail-container">
+                <!-- Cover Page (Card 1) -->
+                <div class="card1">
+                    <h4 class="username">To You 💖<span class="underline"></span></h4>
+                    <h3>Happy Birthday</h3>
+                </div>
+                
+                <!-- Page 2 -->
+                <div class="card-page page2">
+                    <div class="page-content">
+                        <div class="media-container">
+                            <img src="/images/image2.jpeg" alt="Beautiful moment" class="page-image">
+                        </div>
+                        <div class="page-message">
+                            <h3>Your Ethereal Beauty</h3>
+                            <p>There's something absolutely captivating about you—a luminous beauty that goes beyond the physical. Your radiance has this divine quality that draws everyone in, leaving them mesmerized by your presence.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Page 3 -->
+                <div class="card-page page3">
+                    <div class="page-content">
+                        <div class="media-container">
+                            <img src="/images/image1.jpeg" alt="Special memory" class="page-image">
+                        </div>
+                        <div class="page-message">
+                            <h3>Your Magnetic Charisma</h3>
+                            <p>Your charisma is undeniable—the way you command a room without even trying. There's an effortless grace about you, a magnetic energy that makes people want to be near you. You are truly enchanting.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Page 4 -->
+                <div class="card-page page4">
+                    <div class="page-content">
+                        <div class="media-container">
+                            <img src="/images/image3.jpeg" alt="Cherished memory" class="page-image">
+                        </div>
+                        <div class="page-message">
+                            <h3>Your Divine Presence</h3>
+                            <p>There's something almost divine about the way you carry yourself—an elegance and grace that's simply breathtaking. Your presence illuminates everything around you, making every moment feel special and magical.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Page 5 -->
+                <div class="card-page page5">
+                    <div class="page-content">
+                        <div class="media-container">
+                            <img src="/images/image4.jpeg" alt="Precious moments" class="page-image">
+                        </div>
+                        <div class="page-message">
+                            <h3>Your Captivating Aura</h3>
+                            <p>Your beauty, your charm, your aura—they're absolutely spellbinding. You're a rare gem, someone whose presence alone can transform any moment. Today, we celebrate the incredible, mesmerizing person you are.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
